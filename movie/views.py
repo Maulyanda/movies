@@ -1,20 +1,11 @@
 from django.shortcuts import render
-from rest_framework.views import APIView
-from rest_framework import viewsets, status
-
+from rest_framework import status
 from rest_framework.response import Response
-from django.http import JsonResponse
-from django.http import HttpResponse
+from rest_framework.views import APIView
+from rest_framework.exceptions import NotFound
 
 from movie.models import MovieList
 from movie.serializers import MovieListSerializer
-
-from rest_framework.exceptions import NotFound, PermissionDenied
-
-from rest_framework.decorators import action
-
-import json
-
 
 # Create your views here.
 class MoviesList(APIView):
