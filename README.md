@@ -31,9 +31,9 @@ DATABASES = {
 }
 ```
 
-### Tests
+## Tests
 
-#### Running the Test
+### Running the Test
 
 Make sure the the code passes all tests.
 
